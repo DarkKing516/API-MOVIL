@@ -1,4 +1,3 @@
-```markdown
 # API REST con Node.js, Express y MongoDB
 
 Este proyecto consiste en una API REST desarrollada utilizando Node.js, Express y MongoDB. La API permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) en una base de datos de usuarios.
@@ -20,6 +19,7 @@ Antes de comenzar, asegúrate de tener instalado lo siguiente:
 
 1. Crea una cuenta en MongoDB Atlas y configura un clúster.
 2. Copia la cadena de conexión de tu clúster y pégala en el archivo `.env`, junto con el nombre de la base de datos.
+
    ```
    MONGODB_URI=mongodb+srv://<username>:<password>@<cluster>/<database>?retryWrites=true&w=majority
    ```
@@ -45,4 +45,3 @@ Si deseas contribuir a este proyecto, siéntete libre de abrir una solicitud de 
 ## Licencia
 
 Este proyecto está bajo la Licencia MIT. Para más detalles, consulta el archivo [LICENSE](LICENSE).
-```
