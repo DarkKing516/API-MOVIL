@@ -12,7 +12,7 @@ Antes de comenzar, asegúrate de tener instalado lo siguiente:
 
 ## Instalación
 
-1. Clona este repositorio a tu máquina local utilizando `git clone`.
+1. Clona este repositorio en tu máquina local utilizando `git clone`.
 2. Ve a la carpeta del proyecto y ejecuta `npm install` para instalar todas las dependencias.
 
 ## Configuración
