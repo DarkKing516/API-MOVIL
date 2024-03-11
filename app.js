@@ -6,35 +6,35 @@ const userRoute = require("./routes/user");
 const dateRoute = require("./routes/date");
 const orderRoute = require("./routes/order");
 
-// Settings
+// settings
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Middlewares
-app.use(express.json()); // Parsing JSON requests
+// middlewares
+app.use(express.json()); // Para parsear JSON en el cuerpo de las solicitudes
+app.use("/api", userRoute);
 
-// Routes
-app.use("/api/users", userRoute);
-app.use("/api/dates", dateRoute);
-app.use("/api/orders", orderRoute);
+app.use("/api", dateRoute);
 
-// Initial route
+app.use("/api", orderRoute);
+
+// Rutas
 app.get("/", (req, res) => {
-    res.send("Welcome to my API. Please refer to /api/users, /api/dates, and /api/orders for available endpoints.");
+    res.send("Welcome to my API");
 });
 
-// Database connection
-mongoose.connect(process.env.MONGODB_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-})
-.then(() => console.log("Connected to MongoDB Atlas"))
-.catch((error) => {
-    console.error("Error connecting to MongoDB:", error.message);
-    process.exit(1); // Exit the process if unable to connect to the database
-});
+// Conexión a MongoDB
+mongoose
+    .connect(process.env.MONGODB_URI
+        , {
+            useNewUrlParser: true,
+            useUnifiedTopology: true
+        }
+    )
+    .then(() => console.log("Connected to MongoDB Atlas"))
+    .catch((error) => console.error(error));
 
-// Starting the server
+// Iniciando el servidor
 app.listen(port, () => {
-    console.log(`Server listening on port http://localhost:${port}/`);
+    console.log("Server listening on port http://localhost:" + port + "/");
 });
