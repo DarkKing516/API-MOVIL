@@ -1,0 +1,32 @@
+# Crear una cita/reserva
+POST http://localhost:3000/api/dates HTTP/1.1
+Content-Type: application/json
+
+{
+  "id_date": "cita123",
+  "user_id": "userId123",
+  "user_name": "Nombre del usuario",
+  "appointment_date": "2024-03-11T10:00:00.000Z",
+  "description": "Descripción de la cita"
+}
+
+# Obtener todas las citas/reservas
+GET http://localhost:3000/api/dates
+
+# Obtener una cita/reserva por su ID (reemplaza {appointmentId} con el ID real de la cita)
+GET http://localhost:3000/api/dates/idCita
+
+# Actualizar una cita/reserva por su ID (reemplaza {appointmentId} con el ID real de la cita)
+PUT http://localhost:3000/api/dates/idCita
+Content-Type: application/json
+
+{
+  "id_date": "cita123",
+  "user_id": "userId123",
+  "user_name": "Nuevo nombre del usuario",
+  "appointment_date": "2024-03-11T14:00:00.000Z",
+  "description": "Nueva descripción de la cita"
+}
+
+# Eliminar una cita/reserva por su ID (reemplaza {appointmentId} con el ID real de la cita)
+DELETE http://localhost:3000/api/dates/idCita
