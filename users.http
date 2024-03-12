@@ -5,8 +5,8 @@ Content-Type: application/json
   "name": "Nombre del usuario",
   "phone": "Teléfono del usuario",
   "document": "Documento del usuario",
-  "email": "DarkKing@gmail.com",
-  "username": "DarkKing",
+  "email": "Usuario@gmail.com",
+  "username": "Usuario",
   "password": "1234"
 }
 # Obtener todos los usuarios
