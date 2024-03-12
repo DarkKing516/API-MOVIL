@@ -3,8 +3,11 @@ Content-Type: application/json
 
 {
   "name": "Nombre del usuario",
-  "age": 30,
-  "email": "usuario@example.com"
+  "phone": "Teléfono del usuario",
+  "document": "Documento del usuario",
+  "email": "DarkKing@gmail.com",
+  "username": "DarkKing",
+  "password": "1234"
 }
 # Obtener todos los usuarios
 GET http://localhost:3000/api/users
@@ -17,10 +20,12 @@ PUT http://localhost:3000/api/users/65eb78970d4b7085f159e53d
 Content-Type: application/json
 
 {
-  "name": "Nuevo nombre del usuario",
-  "age": 35,
-  "email": "nuevo_email@example.com"
+  "name": "Nombre del usuario actualizado",
+  "phone": "Teléfono del usuario actualizado",
+  "document": "Documento del usuario actualizado",
+  "email": "correo@ejemplo.com",
+  "username": "nombredeusuario",
+  "password": "contraseña"
 }
-
 # Eliminar un usuario por su ID (reemplaza {userId} con el ID real del usuario)
 DELETE http://localhost:3000/api/users/65eb78970d4b7085f159e53d
