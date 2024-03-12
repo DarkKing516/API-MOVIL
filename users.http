@@ -29,3 +29,12 @@ Content-Type: application/json
 }
 # Eliminar un usuario por su ID (reemplaza {userId} con el ID real del usuario)
 DELETE http://localhost:3000/api/users/65eb78970d4b7085f159e53d
+
+
+POST http://localhost:3000/api/login HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "DarkKing@gmail.com",
+  "password": "1234"
+}
