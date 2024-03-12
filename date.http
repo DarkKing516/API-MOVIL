@@ -3,12 +3,12 @@ POST http://localhost:3000/api/dates HTTP/1.1
 Content-Type: application/json
 
 {
-  "id_date": "cita123",
   "user_id": "userId123",
   "user_name": "Nombre del usuario",
   "appointment_date": "2024-03-11T10:00:00.000Z",
   "description": "Descripción de la cita"
 }
+
 
 # Obtener todas las citas/reservas
 GET http://localhost:3000/api/dates
