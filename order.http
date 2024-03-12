@@ -10,11 +10,13 @@ Content-Type: application/json
   "products": [
     {
       "name": "Producto 1",
+      "image": "https://github.com/Dan2572/assets_erikas_homemade/blob/main/Desktop/assets/images/mu%C3%B1econieve.jpg",
       "quantity": 2,
       "price": 50.00
     },
     {
       "name": "Producto 2",
+      "image": "https://github.com/Dan2572/assets_erikas_homemade/blob/main/Desktop/assets/images/mu%C3%B1econieve.jpg",
       "quantity": 1,
       "price": 50.00
     }
