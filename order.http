@@ -3,15 +3,15 @@ POST http://localhost:3000/api/orders HTTP/1.1
 Content-Type: application/json
 
 {
-  "creation_date": "2024-03-11T08:00:00.000Z",
+  "creation_date": "2020-05-11T08:00:00.000Z",
   "delivery_date": "2024-03-15T08:00:00.000Z",
-  "order_status": "pending",
-  "total_order": 150.00,
+  "order_status": "delivered",
+  "total_order": 20000.00,
   "products": [
     {
-      "name": "Producto 1",
+      "name": "auto",
       "image": "https://github.com/Dan2572/assets_erikas_homemade/blob/main/Desktop/assets/images/mu%C3%B1econieve.jpg",
-      "quantity": 2,
+      "quantity": 4,
       "price": 50.00
     },
     {
