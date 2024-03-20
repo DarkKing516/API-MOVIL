@@ -2,6 +2,10 @@ const mongoose = require("mongoose");
 
 // Define el esquema del usuario
 const orderSchema = new mongoose.Schema({
+    user_id: {
+        type: String,
+        required: true
+    },
     creation_date: {
         type: String,
         required: true
