@@ -11,13 +11,13 @@ Content-Type: application/json
   "products": [
     {
       "name": "auto",
-      "image": "https://github.com/Dan2572/assets_erikas_homemade/blob/main/Desktop/assets/images/mu%C3%B1econieve.jpg",
+      "image": "https://raw.githubusercontent.com/Dan2572/assets_erikas_homemade/main/Desktop/assets/images/mu%C3%B1econieve.jpg",
       "quantity": 4,
       "price": 50.00
     },
     {
       "name": "Producto 2",
-      "image": "https://github.com/Dan2572/assets_erikas_homemade/blob/main/Desktop/assets/images/mu%C3%B1econieve.jpg",
+      "image": "https://raw.githubusercontent.com/Dan2572/assets_erikas_homemade/main/Desktop/assets/images/mu%C3%B1econieve.jpg",
       "quantity": 1,
       "price": 50.00
     }
