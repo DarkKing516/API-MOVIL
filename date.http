@@ -1,5 +1,5 @@
 # Crear una cita/reserva
-POST http://localhost:3000/api/dates HTTP/1.1
+POST https://api-movil-rh0g.onrender.com/api/dates HTTP/1.1
 Content-Type: application/json
 
 {
@@ -11,13 +11,13 @@ Content-Type: application/json
 
 
 # Obtener todas las citas/reservas
-GET http://localhost:3000/api/dates
+GET https://api-movil-rh0g.onrender.com/api/dates
 
 # Obtener una cita/reserva por su ID (reemplaza {appointmentId} con el ID real de la cita)
-GET http://localhost:3000/api/dates/idCita
+GET https://api-movil-rh0g.onrender.com/api/dates/idCita
 
 # Actualizar una cita/reserva por su ID (reemplaza {appointmentId} con el ID real de la cita)
-PUT http://localhost:3000/api/dates/idCita
+PUT https://api-movil-rh0g.onrender.com/api/dates/idCita
 Content-Type: application/json
 
 {
@@ -29,4 +29,4 @@ Content-Type: application/json
 }
 
 # Eliminar una cita/reserva por su ID (reemplaza {appointmentId} con el ID real de la cita)
-DELETE http://localhost:3000/api/dates/idCita
+DELETE https://api-movil-rh0g.onrender.com/api/dates/idCita
